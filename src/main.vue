@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import { app, action, imaging, } from 'photoshop';
 import { uxp, photoshop, } from './globals'; import { reactive, ref } from 'vue';
-import { ElMessage, FormInstance } from 'element-plus';
+import { FormInstance } from 'element-plus';
 ;
 
 const uploadImage = async () => {
@@ -16,7 +15,6 @@ const uploadImage = async () => {
 
 
   if (file) {
-
 
     moduleExecute(async (cxt) => {
 
