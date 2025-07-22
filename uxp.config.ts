@@ -29,22 +29,7 @@ const manifest: UXP_Manifest = {
       maximumSize: { width: 2000, height: 2000 },
       preferredDockedSize: { width: 230, height: 300 },
       preferredFloatingSize: { width: 450, height: 400 },
-      icons: [
-        {
-          width: 23,
-          height: 23,
-          path: "icons/dark.png",
-          scale: [1, 2],
-          theme: ["darkest", "dark", "medium"],
-        },
-        {
-          width: 23,
-          height: 23,
-          path: "icons/light.png",
-          scale: [1, 2],
-          theme: ["lightest", "light"],
-        },
-      ],
+      icons: [],
     },
   ],
   featureFlags: {
@@ -70,31 +55,7 @@ const manifest: UXP_Manifest = {
       enablePluginCommunication: true,
     },
     allowCodeGenerationFromStrings: true,
-
-    enableAddon: true,
   },
-
-
-  // requiredPermissions: [
-  //   "photoshop:core",
-  //   "photoshop:currentDocument",
-  //   "photoshop:documents",
-  //   "executeAsBatchPlay", // 25.x新增权限
-  //   "fileSystem:read",
-  // ],
-  addon: {
-    name: "bolt-uxp-hybrid.uxpaddon",
-  },
-  icons: [
-    {
-      width: 48,
-      height: 48,
-      path: "icons/plugin-icon.png",
-      scale: [1, 2],
-      theme: ["darkest", "dark", "medium", "lightest", "light", "all"],
-      species: ["pluginList"],
-    },
-  ],
 };
 
 export const config: UXP_Config = {
